@@ -17,13 +17,13 @@ export function Privacy(): JSX.Element {
           <p><strong>Workout logs and fitness data:</strong> Includes exercises, sets, reps, and progress notes.</p>
           <p><strong>Body photos and body fat scans:</strong> Used to help track progress visually and with AI-powered body composition estimates.</p>
           <p><strong>App usage data:</strong> Basic information on how you interact with the app (such as log frequency) to maintain functionality.</p>
-          <p><strong>Purchase history:</strong> Limited to subscription status, as processed through Apple’s App Store.</p>
+          <p><strong>Purchase history:</strong> Not applicable at this time. We do not offer purchases or subscriptions.</p>
 
           <h2>How We Use Information</h2>
-          <p>We use this information only to provide app functionality: tracking progress, generating metrics, storing scans securely, and managing subscriptions. Your data is never used for advertising.</p>
+          <p>We use this information only to provide app functionality: tracking progress, generating metrics, and storing scans securely. Your data is never used for advertising.</p>
 
           <h2>Payments</h2>
-          <p>All purchases are processed securely by Apple via the App Store. We do not collect or store payment details. Please refer to Apple’s <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a> for payment information.</p>
+          <p>We do not currently process payments or offer subscriptions. If payments are introduced in the future, they will be processed securely by Apple via the App Store. We will not collect or store payment details. Please refer to Apple’s <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a> for payment information.</p>
 
           <h2>Data Sharing</h2>
           <p>We do not sell, rent, or share your data with third parties. Data remains tied to your account and is only accessible to you when signed in.</p>
