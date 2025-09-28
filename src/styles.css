@@ -1,22 +1,28 @@
-:root { --text:#e5e7eb; --muted:#9ca3af; --primary:#60a5fa; --card:#111827; --border:#1f2937; --bg:#0b0b0f; }
-* { box-sizing: border-box; }
-html, body, #root { height: 100%; }
-body { font-family: Arial, sans-serif; color: var(--text); margin: 0; padding: 0; background: var(--bg); }
-.container { max-width: 880px; margin: 56px auto; padding: 0 20px; }
-.card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; box-shadow: 0 2px 18px rgba(0,0,0,0.35); }
-.header { text-align: center; padding: 28px 24px 8px; }
-.logo { display: block; margin: 0 auto 12px; max-width: 200px; height: auto; }
-h1 { color: #f3f4f6; margin: 8px 0 6px; font-size: 32px; }
-.tagline { color: var(--muted); margin: 0 0 14px; }
-.cta { display: inline-block; background: var(--primary); color: white; padding: 10px 16px; border-radius: 10px; text-decoration: none; font-weight: bold; border: 1px solid transparent; }
-.cta:hover { filter: brightness(0.95); }
-.cta-outline { background: transparent; color: var(--primary); border: 1px solid var(--primary); }
-.cta-outline:hover { background: rgba(96,165,250,0.1); }
-.policy { padding: 6px 18px 18px; line-height: 1.65; }
-.policy h2 { font-size: 18px; margin: 18px 0 8px; }
-.policy a:not(.cta) { color: var(--primary); text-decoration: none; }
-.policy a:not(.cta):hover { text-decoration: underline; }
-footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 18px; }
-.sticky-privacy { position: fixed; left: 0; right: 0; bottom: 0; display: flex; justify-content: center; padding: 12px 16px; background: linear-gradient(180deg, rgba(11,11,15,0) 0%, rgba(11,11,15,0.85) 40%, rgba(11,11,15,1) 100%); }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root { @apply h-full; }
+  body { @apply bg-[#0b0b0f] text-slate-200 antialiased; }
+  h1 { @apply text-slate-100 text-3xl mt-2 mb-1; }
+}
+
+@layer components {
+  .container { @apply max-w-3xl mx-auto mt-14 px-5; }
+  .card {
+    @apply rounded-2xl border border-white/10 bg-white/5 shadow-xl backdrop-blur-md;
+    @apply transition-colors duration-300;
+  }
+  .header { @apply text-center px-6 pt-7 pb-3; }
+  .logo { @apply block mx-auto mb-3 max-w-[200px] h-auto; }
+  .tagline { @apply text-slate-400 mb-3; }
+  .cta { @apply inline-block bg-brand text-white font-semibold rounded-xl px-4 py-2 no-underline border border-transparent shadow-md hover:brightness-95; }
+  .cta-outline { @apply inline-block bg-transparent text-brand font-semibold rounded-xl px-4 py-2 border border-brand hover:bg-brand/10; }
+  .policy { @apply px-5 pt-2 pb-5 leading-relaxed; }
+  .policy h2 { @apply text-lg mt-4 mb-2 text-slate-100; }
+  .policy a:not(.cta) { @apply text-brand no-underline hover:underline; }
+  footer { @apply text-center text-slate-400 text-xs mt-4; }
+}
 
 

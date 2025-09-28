@@ -4,6 +4,11 @@ import { createHashRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import './styles.css'
 
+// Redirect URLs that contain a raw access_token hash to the /confirmed route
+if (location.hash && /#access_token/i.test(location.hash)) {
+  location.replace('#/confirmed')
+}
+
 const router = createHashRouter([
   {
     path: '/*',
