@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/confirmed/page": "app/confirmed/page.js",
+  "/privacy/page": "app/privacy/page.js",
+  "/support/page": "app/support/page.js"
+}

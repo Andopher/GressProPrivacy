@@ -1,0 +1,20 @@
+{
+  "app\\confirmed\\page.tsx -> @/components/AnimatedBackground": {
+    "id": "app\\confirmed\\page.tsx -> @/components/AnimatedBackground",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_AnimatedBackground_tsx.js"
+    ]
+  },
+  "app\\privacy\\page.tsx -> @/components/AnimatedBackground": {
+    "id": "app\\privacy\\page.tsx -> @/components/AnimatedBackground",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_AnimatedBackground_tsx.js"
+    ]
+  },
+  "app\\support\\page.tsx -> @/components/AnimatedBackground": {
+    "id": "app\\support\\page.tsx -> @/components/AnimatedBackground",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_AnimatedBackground_tsx.js"
+    ]
+  }
+}
