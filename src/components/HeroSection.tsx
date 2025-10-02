@@ -96,13 +96,15 @@ export default function HeroSection() {
             <Link href="/privacy" className="cta min-w-[200px]">
               Privacy Policy
             </Link>
-            <button 
-              className="cta-outline min-w-[200px] cursor-not-allowed opacity-60" 
-              disabled
+            <a 
+              className="cta-outline min-w-[200px]" 
+              href="https://apps.apple.com/us/app/gresspro/id6751070455" 
+              target="_blank" 
+              rel="noopener noreferrer"
             >
               <Download className="w-4 h-4 mr-2" />
-              Download — Coming Soon
-            </button>
+              Download on the App Store
+            </a>
           </motion.div>
         </motion.div>
       </div>

@@ -53,13 +53,15 @@ export default function Navbar() {
               <Calendar className="w-3 h-3" />
               <span>iOS Sep 2025</span>
             </div>
-            <button 
+            <a
+              href="https://apps.apple.com/us/app/gresspro/id6751070455"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-brand/10 text-brand border border-brand/20 rounded-lg hover:bg-brand/20 transition-colors duration-200 text-sm font-medium"
-              disabled
             >
               <Download className="w-3 h-3" />
-              Coming Soon
-            </button>
+              Download
+            </a>
           </div>
         </div>
 
@@ -91,13 +93,15 @@ export default function Navbar() {
                 <Calendar className="w-3 h-3" />
                 <span>iOS Release: September 2025</span>
               </div>
-              <button 
+              <a 
+                href="https://apps.apple.com/us/app/gresspro/id6751070455"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-brand/10 text-brand border border-brand/20 rounded-lg w-full justify-center text-sm font-medium"
-                disabled
               >
                 <Download className="w-3 h-3" />
-                Download — Coming Soon
-              </button>
+                Download on the App Store
+              </a>
             </div>
           </div>
         </div>
